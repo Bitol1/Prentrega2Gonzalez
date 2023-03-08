@@ -43,7 +43,7 @@ let continuar = true;
 do {
     const monto = prompt("Ingrese el monto del producto:")
     if (monto === null) {
-        break;
+        continuar;
     } else if (isNaN(monto) || monto <= 0) {
         mostrarMensaje("El monto ingresado no es válido");
     } else if (monto > 0) {
